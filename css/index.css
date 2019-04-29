@@ -70,7 +70,6 @@ h1, h2, h3, h4, h5, span{
 .container {
   width: 900px;
   margin: 0 auto;
-  border: 1px solid red;
   padding: 20px;
 }
 
@@ -156,14 +155,12 @@ footer p {
   margin-top: 30px;
   text-align: center; 
 }
-
 hr {
   margin: 20px 0px; 
 }
 
 @media(max-width: 500px) {
     .container {
-        border: 1px solid red;
         width: 500px;
         display: flex;
         flex-direction: column;
@@ -217,7 +214,6 @@ hr {
 
     .middle-img {
       width: auto;
-      border: 1px solid red;
     }
     .mid-section {
       width: 200px;
@@ -228,7 +224,11 @@ hr {
     
     .bottom-line{
       margin-bottom: 30px;
-    
+    }
+    footer {
+      border: 1px solid red;
+      margin-right: 70px;
+    }
 }
 
 @media(max-width: 800px) {
