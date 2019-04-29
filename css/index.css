@@ -68,8 +68,11 @@ h1, h2, h3, h4, h5, span{
 /* Your code starts here! */
 
 .container {
-    width: 900px;
-  }
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 20px;
+}
 
 header {
   display: flex;
@@ -160,9 +163,10 @@ hr {
 
 @media(max-width: 500px) {
     .container {
+        border: 1px solid red;
         width: 500px;
-        padding: 0px 10px;
-        height: auto;
+        display: flex;
+        flex-direction: column;
     }
     .world {
         display: none;
@@ -171,10 +175,11 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: center; 
-        width: 90%;
+        padding-right: 250px;
     } 
     .mid-section p {
         margin-bottom: 15px;
+        width: 100%;
     }
     .midbottom-section p {
         margin-bottom: 15px;
@@ -182,10 +187,6 @@ hr {
     .bottom-section > span {
         margin-bottom: 0px;
     }
-    .logo:nth-last-of-type(6) {
-        order: 0;
-    }
-
     .logo {
         order: -1;
     }
@@ -194,15 +195,18 @@ hr {
         text-align: center;
         display: flex;
         flex-direction: column;
+        padding-right: 250px;
+        text-align: center;
     }
     nav a {
         border: 1px solid lightgray;
-        width: 490px;
+        width: 500px;
         padding: 10px 0px;
+        margin-left: 225px;
     }
     .top-section {
         margin: 20px 0px;;
-      
+
     }
     .top-section > button {
         font-size: 30%;
@@ -210,16 +214,43 @@ hr {
         margin-left: 30%;
         margin-bottom: 30px;
     }   
+
+    .middle-img {
+      width: auto;
+      border: 1px solid red;
+    }
+    .mid-section {
+      width: 200px;
+    }
     .top-line {
       margin-bottom: 90px;
     }
     
-    .bottom-line {
-      margin-top: px;
-    }
-
     .bottom-line{
       margin-bottom: 30px;
-    }
+    
+}
 
+@media(max-width: 800px) {
+  .container {
+    width: 750px;
+  }
+  .top-section, .mid-section, .midbottom-section, .bottom-section, .middle-img, header {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .logo {
+    order: -1;
+    margin-bottom: 15px;
+  }
+  .world {
+    display: none;
+  }
+  .top-line {
+    padding-bottom: 25px;
+  }
 }
