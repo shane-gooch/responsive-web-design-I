@@ -226,8 +226,11 @@ hr {
       margin-bottom: 30px;
     }
     footer {
-      border: 1px solid red;
-      margin-right: 70px;
+      display: flex;
+      
+    }
+    footer p {
+      margin-left: 140px;
     }
 }
 
