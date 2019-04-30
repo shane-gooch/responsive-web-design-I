@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, span{
 /* Your code starts here! */
 
 .container {
-  width: 900px;
+  width: 950px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -218,9 +218,7 @@ hr {
     .mid-section {
       width: 200px;
     }
-    .top-line {
-      margin-bottom: 90px;
-    }
+
     
     .bottom-line{
       margin-bottom: 30px;
@@ -253,7 +251,11 @@ hr {
   .world {
     display: none;
   }
+
+  button {
+    margin-bottom: 10px;
+  }
   .top-line {
-    padding-bottom: 25px;
+    margin-bottom: 100px;
   }
 }
